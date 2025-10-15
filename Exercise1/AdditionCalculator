@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.util.InputMismatchException;
+
+public class AdditionCalculator {
+    public static void main(String[] args) throws InvalidSetting{
+        Scanner input = new Scanner(System.in);
+
+        try{
+            System.out.print("Enter the first integer to add: ");
+            int num1 = input.nextInt();
+            System.out.println();
+            System.out.print("Enter the second integer to add: ");
+            int num2 = input.nextInt();
+            System.out.println();
+
+            int sum = num1 + num2;
+            System.out.println("The sum of " + num1 + " and " + num2 + " is " + sum);
+        } catch (InputMismatchException e){
+            System.out.orintln("Invalid input.");
+        }
+    }
+}
