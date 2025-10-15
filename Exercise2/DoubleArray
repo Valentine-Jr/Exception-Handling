@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class DoubleArray{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+
+        try{
+            double[] doubleArray = new double[50];
+            for(int i = 0; i < 50; i++){
+                doubleArray[i] = Math.random() * (500 - 0 +1) - 0;
+            }
+
+            System.out.print("An array of double values has been generated. Enter an index to get an array value: ");
+            int index = input.nextInt();
+            System.out.println("The value for index " + index + " is " + doubleArray[index] + ".");
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("The entered index is out of the array's boundary.");
+        } finally {
+            System.out.println("Program terminated.");
+        }
+    }
+}

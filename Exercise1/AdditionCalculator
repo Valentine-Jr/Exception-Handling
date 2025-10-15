@@ -16,7 +16,7 @@ public class AdditionCalculator {
             int sum = num1 + num2;
             System.out.println("The sum of " + num1 + " and " + num2 + " is " + sum);
         } catch (InputMismatchException e){
-            System.out.orintln("Invalid input.");
+            System.out.println("Invalid input.");
         }
     }
 }
