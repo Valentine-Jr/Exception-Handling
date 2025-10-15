@@ -1,0 +1,17 @@
+public class Triangle{
+    private double side1;
+    private double side2;
+    private double side3;
+
+    public Triangle(double s1, double s2, double s3){
+        this.side1 = s1;
+        this.side2 = s2;
+        this.side3 = s3;
+    }
+
+    public boolean checkSides() throws IllegalTriangleSideException {
+        if(side1+side2 <= side3 || side1+side3 <= side2 || side2+side3 <= side1){
+            throw new IllegalTriangleSideException();
+        } else return true;
+    }
+}

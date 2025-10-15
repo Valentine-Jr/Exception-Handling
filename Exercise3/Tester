@@ -1,0 +1,10 @@
+public class Tester{
+    public static void main(String[] args){
+        Triangle t1 = new Triangle(6.4,9.3,3.1);
+        t1.checkSides();
+        Triangle t2 = new Triangle(1.5,1.5,1.55);
+        t2.checkSides();
+        Triangle t3 = new Triangle(40,4.0,14);
+        t3.checkSides();
+    }
+}
